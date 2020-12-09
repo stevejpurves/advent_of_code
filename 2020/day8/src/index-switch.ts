@@ -31,7 +31,7 @@ function compile(code: string): Program {
 let ACCUMULATOR = 0;
 
 function run(program: Program) {
-  const end = program.length - 1;
+  const end = program.length;
   const counts: ExecCounts = Array(program.length).fill(0);
   let pc = 0; // program counter :D
   let steps = 0;

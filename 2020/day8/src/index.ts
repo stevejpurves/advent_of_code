@@ -44,7 +44,7 @@ function compile(code: string): Program {
 let ACCUMULATOR: Accumulator = { value: 0 };
 
 function run(processor:Processor, program: Program) {
-  const end = program.length - 1;
+  const end = program.length ;
   const counts: ExecCounts = Array(program.length).fill(0);
   let pc = 0; // program counter :D
   let steps = 0;
